@@ -1,0 +1,40 @@
+body {
+  background-color: rgb(248 249 250);
+}
+:root {
+  --distance-primary-xs: 5px;
+  --distance-primary-s: 10px;
+  --distance-primary-m: 20px;
+  --distance-primary-l: 30px;
+  --distance-primary-xl: 40px;
+  --distance-primary-xll: 80px;
+  /* fonts */
+
+  --font-size-xs: 14px;
+  --font-size-s: 16px;
+  --font-size-m: 18px;
+  --font-size-l: 22px;
+  --font-size-xl: 26px;
+
+  /* Font weight */
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Set a default primary distance */
+  --default-distance-primary: var(--distance-primary-m);
+
+  --padding-primary: var(--default-distance-primary);
+  --margin-primary: var(--default-distance-primary);
+  --width-primary: var(--default-distance-primary);
+
+  /* Define padding and margin custom properties */
+  --padding-primary: var(--distance-primary);
+  --margin-primary: var(--distance-primary);
+
+  --color-light: #f8f9fa;
+  --font-family-primary: "Mulish", sans-serif;
+}
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");

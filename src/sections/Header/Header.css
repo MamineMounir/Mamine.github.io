@@ -1,0 +1,34 @@
+#nav {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  font-size: 1.7rem;
+  padding: calc(var(--distance-primary-m) + var(--distance-primary-xs))
+    var(--distance-primary-xl)
+    calc(var(--distance-primary-m) + var(--distance-primary-xs))
+    calc(var(--distance-primary-xl) + var(--distance-primary-s));
+  z-index: 200;
+}
+@media (max-width: 575.98px) {
+  #nav {
+    padding: var(--distance-primary-s) var(--distance-primary-m)
+      var(--distance-primary-s)
+      calc(var(--distance-primary-xl) + var(--distance-primary-s));
+  }
+}
+@media (min-width: 991px) and (max-width: 1020px) {
+  #nav {
+    padding: var(--distance-primary-s) var(--distance-primary-m)
+      var(--distance-primary-s)
+      calc(var(--distance-primary-xl) + var(--distance-primary-s));
+  }
+}
+#mainmenu ul li a {
+  color: #2d2e32;
+  font-weight: 600;
+  transition: all 0.23s;
+}
+#mainmenu ul li a:hover,
+#icon1:hover,
+#icon2:hover {
+  color: #147efb;
+}
