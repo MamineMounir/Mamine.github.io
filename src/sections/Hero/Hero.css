@@ -1,0 +1,548 @@
+h1#h1-wave {
+  position: relative;
+}
+#wave {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  bottom: 5px;
+}
+#hero {
+  background-color: var(--color-light);
+  padding-top: 90px;
+}
+#hero p {
+  line-height: 1.8;
+}
+#hero .container #desc p {
+  font-weight: var(--font-weight-normal);
+  line-height: 1.6;
+  font-size: 18px;
+  color: #555;
+  font-family: Mulish, sans-serif;
+  padding-top: calc(var(--padding-primary) / 8); /* 10px*/
+}
+#hero .container #desc h1 {
+  color: #2d2e32;
+  margin: 20px 0px;
+}
+h1#h1-desc {
+  position: relative;
+}
+@keyframes animate {
+  0%,
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+}
+#icon1,
+#icon2 {
+  color: #2d2e32;
+  text-decoration: none;
+  width: 35px;
+  height: 35px;
+
+  transition: all 0.23s;
+  margin-right: 10px;
+}
+a {
+  text-decoration: none;
+}
+#skills {
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  padding-top: var(--distance-primary-xll);
+}
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+#skills ul li {
+  cursor: pointer;
+}
+#skills svg {
+  height: 50px;
+  width: fit-content;
+  cursor: pointer;
+  margin: 20px;
+}
+svg {
+  transition: 0.3s;
+}
+svg:hover {
+  transform: scale(1.1);
+}
+/* #hero .container #desc h1 {
+  font-size: 40px;
+} */
+#hero .container #desc p {
+  font-size: var(--font-size-m);
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+#my-pic {
+  width: 14rem;
+  height: 14rem;
+  margin: 0;
+}
+#two-contact-box {
+  padding: 80px 0;
+}
+/*
+@media (min-width: 291px) and (max-width: 375px) {
+  .col-12 {
+    #my-pic {
+      width: 16rem;
+      height: 16rem;
+    }
+    #hero {
+      padding-top: 90px;
+    }
+    #hero .container #desc h1 {
+      font-size: calc(var(--distance-primary-xl));
+      margin-top: 40px;
+    }
+    .row > * {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    #hero .container #desc p {
+      font-size: calc(var(--font-size-m));
+      padding-bottom: 0;
+    }
+
+    #skills svg {
+      margin: 8px;
+    }
+    #skills #title-logos {
+      padding-right: 0;
+      padding-bottom: 10px;
+      border-right: 0;
+      border-right: none;
+      border-bottom: 2px solid rgba(45, 46, 50, 0.5);
+      margin: 20px;
+    }
+    #wave {
+      margin-left: 5px;
+      height: 30px;
+    }
+  }
+}
+
+/* @media (min-width: 901px) and (max-width: 991px) {
+  #desc {
+    text-align: start;
+    padding: 0;
+  }
+  #skills {
+    padding: 0;
+    margin-top: 150px;
+  }
+  #skills svg {
+    margin: 5px 15px;
+  } */
+/* #my-pic { */
+/* position: relative;
+    right: 1px;
+    bottom: -28px;
+    width: 14rem;
+    height: 18rem; */
+/* } */
+/* #hero .container #desc p {
+    padding-bottom: 30px;
+    margin: 0;
+  } */
+/* #hero .container #desc h1 {
+    font-size: 48px;
+  }
+  #skills {
+    flex-direction: row;
+  }
+
+  #skills svg { 
+    /* margin: 10px 30px; 
+  }
+  #hero .container #desc p {
+    padding-top: 8px;
+    font-size: 19px;
+    font-weight: 500;
+  }
+  #hero .container #desc h1 {
+    color: #2d2e32;
+    font-size: 55px;
+    line-height: 1.2;
+    margin-top: 40px;
+  }
+  #hero {
+    padding-top: 170px;
+    padding-left: 40px;
+  }
+  /*  #hero .container #desc h1 {
+    font-size: 40px;
+  }
+  #hero .container #desc p {
+    font-size: 17px;
+  }
+  /* #my-pic { */
+/* width: 14rem;
+    height: 14rem;
+    margin: 0;
+  } 
+}
+
+@media (min-width: 992px) and (max-width: 1025px) {
+  /* .col-lg-5 {
+    #my-pic {
+      position: relative;
+      right: 8px;
+      height: 20rem;
+      width: 21.5rem;
+      bottom: 15px;
+    }
+  } 
+}
+
+*/
+/* TODO: andkhl skills maa col hta nbdlhom mn baad */
+/*
+col-12
+*/
+@media (max-width: 358px) {
+  #wave {
+    display: none;
+  }
+}
+@media (max-width: 290px) {
+  #hero .container #desc h1 {
+    font-size: 40px;
+    padding-top: 15px;
+  }
+  #skills {
+    flex-direction: column;
+    padding: 0;
+    position: static;
+  }
+  #skills #title-logos {
+    padding-right: 0;
+    padding-bottom: 10px;
+    border-right: 0;
+    border-right: none;
+    border-bottom: 2px solid rgba(45, 46, 50, 0.5);
+    /* margin: 20px; */
+  }
+  p#title-logos {
+    font-size: 17px;
+  }
+  #skills {
+    padding-top: 50px;
+  }
+  #skills svg {
+    margin: 10px;
+    height: 40px;
+  }
+  #icon1,
+  #icon2 {
+    margin-right: 0;
+    margin: 0;
+  }
+
+  #hero {
+    padding-top: 85px;
+  }
+
+  #my-pic {
+    width: 13rem;
+    height: 13rem;
+  }
+  #hero .container #desc h1 {
+    font-size: 30px;
+  }
+  #hero .container #desc p {
+    font-size: 15px;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+  }
+}
+
+@media (min-width: 291px) and (max-width: 575.98px) {
+  #hero {
+    padding-top: 105px;
+  }
+  #hero .container #desc h1 {
+    padding-top: 15px;
+    font-size: 40px;
+  }
+  #skills svg {
+    margin: 20px;
+  }
+
+  #skills #title-logos {
+    font-weight: 600;
+    padding-right: 0;
+    padding-bottom: 10px;
+    border-right: 0;
+    border-right: none;
+    border-bottom: 2px solid rgba(45, 46, 50, 0.5);
+    letter-spacing: 2px;
+    padding-right: 0;
+    margin: 85px 0 15px 0;
+  }
+
+  #my-pic {
+    width: 16.5rem;
+    height: 16.5rem;
+  }
+
+  #hero .container #desc p {
+    padding-bottom: 20px;
+    font-size: calc(var(--font-size-m));
+    font-weight: 600;
+  }
+  #icon1,
+  #icon2 {
+    margin: 0px 5px;
+  }
+  #wave {
+    margin-left: 10px;
+    height: 45px;
+    width: 45px;
+  }
+  #skills {
+    flex-direction: column;
+    padding: 0;
+    position: static;
+  }
+}
+
+p#title-logos {
+  font-size: 17px;
+}
+
+/*
+col-sm
+*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #hero .container #desc h1 {
+    font-size: 50px;
+  }
+  .col-sm-12 {
+  }
+  #wave {
+    margin-left: 10px;
+  }
+  #skills {
+    flex-direction: column;
+    padding: 0;
+    position: static;
+  }
+  #skills #title-logos {
+    padding-bottom: 10px;
+    border-right: none;
+    border-bottom: 2px solid rgba(45, 46, 50, 0.5);
+    letter-spacing: 2px;
+    padding-top: 50px;
+    padding-right: 0;
+    margin: 30px 0;
+    font-weight: 600;
+  }
+}
+/*
+ col-md
+*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #icon1,
+  #icon2 {
+    margin: 8px;
+  }
+  #skills {
+    padding: 0;
+    margin-top: 100px;
+    display: flex;
+    text-align: center;
+  }
+  #skills svg {
+    margin: 5px 15px;
+  }
+  #hero .container #desc h1 {
+    font-size: 55px;
+  }
+  p#title-logos {
+    border-right: 2px solid #2d2e3280;
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    margin: 0 30px 0 0;
+    padding-right: 20px;
+    text-align: center;
+  }
+  #skills {
+    flex-direction: row;
+  }
+
+  #skills svg {
+    margin: 10px 30px;
+  }
+  #skills {
+    flex-direction: column;
+    padding: 0;
+    position: static;
+    margin: 0;
+  }
+  #skills #title-logos {
+    padding-bottom: 10px;
+    border-right: none;
+    border-bottom: 2px solid rgba(45, 46, 50, 0.5);
+    letter-spacing: 2px;
+    padding-top: 50px;
+    padding-right: 0;
+    margin: 30px 0;
+  }
+  #hero {
+    padding-top: 140px;
+  }
+  .col-md-12 {
+    #wave {
+      margin-left: 10px;
+      height: 60px;
+    }
+    #my-pic {
+      width: 21rem;
+      height: 21rem;
+      margin: 0;
+    }
+  }
+}
+/*
+  col-lg
+*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #hero {
+    padding-top: 180px;
+  }
+  #skills {
+    padding: 0;
+    margin-top: 100px;
+    display: flex;
+    text-align: center;
+  }
+  #skills svg {
+    margin: 5px 15px;
+  }
+  .col-lg-5,
+  .col-lg-7 {
+  }
+  p#title-logos {
+    border-right: 2px solid #2d2e3280;
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    margin: 0 30px 0 0;
+    padding-right: 20px;
+    text-align: center;
+  }
+  #my-pic {
+    position: relative;
+    right: -4px;
+    bottom: 30px;
+    width: 327px;
+    height: 330px;
+  }
+}
+/*
+  col-xl
+ */
+@media (min-width: 1200px) {
+  #my-pic {
+    position: relative;
+    right: 108px;
+    bottom: 10px;
+    width: 333px;
+    height: 350px;
+  }
+  #wave {
+    margin-bottom: 7px;
+  }
+  p#title-logos {
+    border-right: 2px solid rgba(45, 46, 50, 0.5);
+  }
+  #skills svg {
+    margin: 10px 16px;
+  }
+  #skills #title-logos {
+    padding-right: 20px;
+  }
+  #hero {
+    padding-top: 160px;
+  }
+  #skills {
+    margin-top: 60px;
+  }
+  #hero,
+  #about,
+  #projects,
+  #contact {
+    padding-left: 168px;
+  }
+  #skills svg {
+    margin: 10px 16px;
+  }
+  #skills #title-logos {
+    padding-right: 20px;
+  }
+  #skills {
+    position: relative;
+  }
+  #skills {
+    padding: 0;
+    display: flex;
+    text-align: center;
+  }
+  #skills svg {
+    margin: 5px 15px;
+  }
+  .col-lg-5,
+  .col-lg-7 {
+  }
+  p#title-logos {
+    border-right: 2px solid #2d2e3280;
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    margin: 0 30px 0 0;
+    padding-right: 20px;
+    text-align: center;
+  }
+}
+@media (min-width: 1400px) {
+  #my-pic {
+    position: relative;
+    right: 206px;
+    bottom: 30px;
+    width: 333px;
+    height: 350px;
+  }
+}
+
+.col-xl-7,
+.col-xl-5 {
+  #my-pic {
+    /* position: relative;
+    right: 55px;
+    bottom: 30px;
+    width: 333px;
+    height: 350px; */
+  }
+
+  #hero .container #desc p {
+    font-weight: 500;
+  }
+
+  #wave {
+    margin-left: 10px;
+  }
+}
